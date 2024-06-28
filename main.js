@@ -174,7 +174,6 @@ function handleFormSubmit(e) {
   // Handle todoList element
   if (todoList.length === 0) {
     localStorage.setItem("todo-list", JSON.stringify([]));
-    todoList = [];
   }
 
   // Handle form action

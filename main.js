@@ -133,7 +133,8 @@ function createTodoList(todoList, todoListID) {
 
 function getTodoList() {
   try {
-    return JSON.parse(localStorage.getItem("todo-list"));
+    const todoList = JSON.parse(localStorage.getItem("todo-list"));
+    return Array.isArray(todoList) ? todoList : [];
   } catch {
     return [];
   }

@@ -1,0 +1,7 @@
+#todo-list{
+    list-style-type: disc;
+}
+.button-wrapper{
+    display:flex;
+    align-items: center;
+}

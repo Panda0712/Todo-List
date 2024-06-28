@@ -169,7 +169,8 @@ function handleFormSubmit(e) {
 }
 
 (() => {
-  const todoList = getTodoList();
+  // assignment let
+  let todoList = getTodoList();
 
   // Handle todoList element
   if (todoList.length === 0) {
